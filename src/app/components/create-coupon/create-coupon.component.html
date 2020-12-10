@@ -1,0 +1,23 @@
+<form #formInfo="ngForm" class="menu-box">
+
+    <input #titleInfo="ngModel" required pattern="^[A-Z].*$" type="text" placeholder="Title..." [(ngModel)]="coupon.title" name="title">
+    <!-- <br> -->
+    <span *ngIf="titleInfo.errors?.required && titleInfo.touched">Missing Title</span>
+    <span *ngIf="titleInfo.errors?.pattern && titleInfo.touched">Title starts with a Cap-letter!</span>
+    <!-- <br> -->
+
+    <input #amountInfo="ngModel" required minlength="2" type="number" placeholder="Amount..." [(ngModel)]="coupon.amount" name="amount">
+    <!-- <br> -->
+    <span *ngIf="!amountInfo.valid && amountInfo.touched">Missing Amount</span>
+    <!-- <br> -->
+
+    <input #descriptionInfo="ngModel" required type="text" placeholder="Description..." [(ngModel)]="coupon.description" name="description">
+    <!-- <br> -->
+    <span *ngIf="!descriptionInfo.valid && descriptionInfo.touched">Missing Description</span>
+    <!-- <br> -->
+
+    <input #imageURLInfo="ngModel" required type="text" placeholder="ImageURL..." [(ngModel)]="coupon.imageURL" name="imageURL">
+    <!-- <br> -->
+    <span *ngIf="!imageURLInfo.valid && imageURLInfo.touched">Missing ImageURL</span>
+    <button class="up" [disabled]="!formInfo.form.valid" (click)="addCoupon()">Create</button>
+</form>

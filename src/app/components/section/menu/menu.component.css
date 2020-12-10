@@ -1,0 +1,25 @@
+.navbar {
+    margin: auto;
+    width: 100%;
+    position: fixed;
+}
+
+a {
+    text-decoration: none;
+    color: #7395ae;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #33668A;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background: #81A394;
+    color: #36388E;
+}

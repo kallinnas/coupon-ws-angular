@@ -1,0 +1,10 @@
+h1 {
+    margin: auto;
+    padding: 5px;
+    color: #557a95;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

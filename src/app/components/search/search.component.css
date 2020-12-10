@@ -1,0 +1,30 @@
+div {
+    float: left;
+    padding: 10px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.root input {
+    margin: 3px;
+    font-size: 18px;
+    background-color: rgb(184, 172, 129);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 2px solid #9cbdd4;
+    padding: 14px 10px;
+    /* color inside of the text */
+    outline: none;
+    width: 220px;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.root input:focus {
+    width: 250px;
+    border-color: #338E64;
+    background-color: #81A394;
+}
+
+button {
+    display: none;
+}
