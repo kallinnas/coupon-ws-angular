@@ -16,12 +16,12 @@ export class CouponsService {
   public constructor(private httpClient: HttpClient) { }
 
   public addCouponRest(coupon: Coupon): Observable<Coupon> {
-    return this.httpClient.post<Coupon>(this.baseUrl + 'createCoupon', coupon, { withCredentials: false });
+    return this.httpClient.post<Coupon>(this.baseUrl + 'api/createCoupon', coupon, { withCredentials: false });
   }
 
   public getCouponByIdRest(id: number): Observable<Coupon> {
     return this.httpClient.get<Coupon>(this.baseUrl +
-    'coupon/' + id, { withCredentials: false , responseType: 'json'});
+    'api/coupon/' + id, { withCredentials: false , responseType: 'json'});
   }
 
 }
